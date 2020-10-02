@@ -195,7 +195,14 @@ a {
   width: 1167px;
   padding: 0 13px;
 }
+@media (max-width: 420px) {
+  .container {
+    width: 330px;
+    padding: 0 15px;
+  }
+}
 
+@import "block/d2-buttons";
 @import "block/d2-header";
 @import "block/d2-intro";
 @import "block/d2-referal";

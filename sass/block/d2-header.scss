@@ -1,3 +1,5 @@
+/*! -----HEADER----- */
+
 .d2-header {
   padding: 14px 0;
   font-size: 15px;
@@ -24,8 +26,49 @@
   margin-right: 45px;
 }
 .d2-header__link {
+  color: #818992;
+  transition: all 0.5s ease;
+}
+.d2-header__link:hover {
   color: white;
 }
-.d2-header__item-1 {}
-.d2-header__item-2 {}
-.d2-header__item-3 {}
+.d2-header__icon-megaphone,
+.d2-header__icon-gift,
+.d2-header__icon-chat {
+  fill: #818992;
+  margin-bottom: -1px;
+  transition: all 0.5s ease;
+}
+.d2-header__link:hover .d2-header__icon-megaphone,
+.d2-header__link:hover .d2-header__icon-gift,
+.d2-header__link:hover .d2-header__icon-chat {
+  fill: #FFFFFF;
+}
+.d2-header__menu {
+  display: none;
+}
+
+@media (max-width: 420px) {
+  .d2-header__container {
+    justify-content: space-between;
+  }
+  .d2-header__logo {
+    font-size: 10px;
+    line-height: 21px;
+  }
+  .d2-header__list {
+    display: none;
+  }
+  .d2-header__menu {
+    display: inline-block;
+    background-color: transparent;
+    border: none;
+  }
+  .d2-header__menu svg {
+    fill: white;
+    transition: all 0.3s ease;
+  }
+  .d2-header__menu:active svg {
+    fill: gold;
+  }
+}

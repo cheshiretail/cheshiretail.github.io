@@ -1,3 +1,4 @@
+/*! -----FOOTER----- */
 .d2-footer {
   padding: 14px 0;
   font-size: 15px;
@@ -9,3 +10,7 @@
   font-weight: 700;
   text-transform: uppercase;
   color: #fffc00; }
+
+@media (max-width: 420px) {
+  .d2-footer__logo {
+    font-size: 10px; } }

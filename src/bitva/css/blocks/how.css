@@ -1,0 +1,109 @@
+/*! -----HOW----- */
+.how {
+  padding: 110px 0;
+}
+.how__title {
+  width: 520px;
+  margin: 0 auto;
+  margin-bottom: 107px;
+  font-size: 36px;
+  text-transform: uppercase;
+  font-weight: 900;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(45%, #ffd52b), color-stop(45%, rgba(0, 0, 0, 0)));
+  background-image: -o-linear-gradient(bottom, #ffd52b 45%, rgba(0, 0, 0, 0) 45%);
+  background-image: linear-gradient(to top, #ffd52b 45%, rgba(0, 0, 0, 0) 45%);
+}
+.how__list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.how__item {
+  width: 370px;
+}
+.how__item-title {
+  margin-bottom: 30px;
+  font-size: 21px;
+  font-weight: 700;
+}
+.how__item-descr {
+  font-size: 15px;
+  font-weight: 300;
+}
+.how__link {
+  font-size: 15px;
+  text-decoration: underline;
+}
+.how__numb {
+  position: relative;
+  display: block;
+  width: 130px;
+  height: 130px;
+  margin: 0 auto;
+  margin-bottom: 35px;
+  background-color: #e8e8e8;
+  border-radius: 50%;
+}
+.how__numb2 {
+  background-color: #32b228;
+}
+.how__numb::before {
+  z-index: 3;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 116px;
+  height: 116px;
+  border-radius: 50%;
+  font-size: 26px;
+  line-height: 116px;
+  background-color: #ffffff;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.how__numb::after {
+  z-index: 2;
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+}
+.how__numb1::before {
+  content: " 01.";
+}
+.how__numb1::after {
+  background-color: #43a8f6;
+  -webkit-clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 50% 50%);
+          clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 50% 50%);
+}
+.how__numb2::before {
+  content: " 02.";
+}
+.how__numb2::after {
+  background-color: #e8e8e8;
+  -webkit-clip-path: polygon(0% 0%, 50% 0%, 50% 50%, 0% 100%);
+          clip-path: polygon(0% 0%, 50% 0%, 50% 50%, 0% 100%);
+}
+.how__numb3::before {
+  content: " 03.";
+}
+.how__numb3::after {
+  background-color: #d60505;
+}
+.how__text {
+  padding: 0 37px;
+  margin: 0;
+  margin-bottom: 20px;
+  line-height: 20px;
+}

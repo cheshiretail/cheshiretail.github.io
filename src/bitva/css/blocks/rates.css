@@ -1,0 +1,111 @@
+/*! -----RATES----- */
+.rates {
+  padding-top: 105px;
+  padding-bottom: 120px;
+}
+.rates__title {
+  width: 170px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  font-size: 36px;
+  font-weight: 900;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(45%, #ffd52a), color-stop(45%, rgba(0, 0, 0, 0)));
+  background-image: -o-linear-gradient(bottom, #ffd52a 45%, rgba(0, 0, 0, 0) 45%);
+  background-image: linear-gradient(to top, #ffd52a 45%, rgba(0, 0, 0, 0) 45%);
+}
+.rates__descr {
+  font-size: 16px;
+  line-height: 22px;
+  margin: 0;
+  margin-bottom: 64px;
+}
+.rates__table {
+  position: relative;
+  border-collapse: collapse;
+}
+.rates__table tr:nth-of-type(1) {
+  height: 73px;
+  font-size: 18px;
+  font-weight: 900;
+}
+.rates__table tr:nth-of-type(1) td:nth-of-type(1) {
+  width: 400px;
+}
+.rates__table tr:nth-of-type(1) td:nth-of-type(2) {
+  width: 170px;
+}
+.rates__table tr:nth-of-type(1) td:nth-of-type(3) {
+  width: 200px;
+}
+.rates__table tr:nth-of-type(1) td:nth-of-type(4) {
+  width: 160px;
+}
+.rates__table tr:nth-of-type(1) td:nth-of-type(5) {
+  width: 186px;
+}
+.rates__table tr td:last-of-type {
+  border-left: 5px solid #e8e8e8;
+  border-right: 5px solid #e8e8e8;
+}
+.rates__table tr:first-of-type td:last-of-type {
+  border-top: 5px solid #e8e8e8;
+}
+.rates__table tr:last-of-type td:last-of-type {
+  border-bottom: 5px solid #e8e8e8;
+}
+.rates__table-text {
+  width: 370px;
+  padding: 7px 30px 9px 0;
+  color: #4f4f4f;
+  font-size: 14px;
+  text-align: left;
+}
+.rates__table-checked {
+  display: inline-block;
+  width: 25px;
+  height: 14px;
+  color: transparent;
+  border-left: 4px solid #83d551;
+  border-bottom: 4px solid #83d551;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.rates__table-none {
+  display: inline-block;
+  width: 21px;
+  height: 5px;
+  background-color: #e8e8e8;
+}
+.rates__table-4places {
+  z-index: 2;
+  display: block;
+  position: absolute;
+  min-width: 190px;
+  min-height: 32px;
+  top: -20px;
+  right: 20px;
+  padding: 7px 13px;
+  font-size: 12px;
+  color: white;
+  font-weight: 700;
+  background-color: #008aff;
+  -webkit-box-shadow: 2px 2px 0 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 2px 0 0 rgba(0, 0, 0, 0.1);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transform: rotate(-7deg);
+      -ms-transform: rotate(-7deg);
+          transform: rotate(-7deg);
+}
+.rates__table-price {
+  height: 67px;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #e52121;
+  text-decoration: underline;
+  line-height: 30px;
+}

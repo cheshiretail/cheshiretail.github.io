@@ -1,0 +1,32 @@
+/*! -----ORGANIZERS----- */
+.organizers {
+  padding-top: 109px;
+  padding-bottom: 60px;
+}
+.organizers__title {
+  display: inline-block;
+  margin: 0 auto;
+  margin-bottom: 94px;
+  font-size: 36px;
+  text-transform: uppercase;
+  font-weight: 900;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(45%, #ffd52a), color-stop(45%, rgba(0, 0, 0, 0)));
+  background-image: -o-linear-gradient(bottom, #ffd52a 45%, rgba(0, 0, 0, 0) 45%);
+  background-image: linear-gradient(to top, #ffd52a 45%, rgba(0, 0, 0, 0) 45%);
+}
+.organizers__img {
+  width: 204px;
+  height: 81px;
+  margin-bottom: 70px;
+}
+.organizers__descr {
+  width: 970px;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 300;
+  text-align: center;
+}
+.organizers__descr:not(:last-of-type) {
+  margin-bottom: 26px;
+}

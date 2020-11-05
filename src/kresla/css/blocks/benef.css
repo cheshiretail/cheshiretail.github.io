@@ -1,0 +1,80 @@
+/*! -----BENEF----- */
+.benef {
+  padding-top: 73px;
+  padding-bottom: 163px;
+}
+.benef__title {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 162px;
+  font-family: 'MuseoSansCyrl-700', sans-serif;
+  font-size: 36px;
+  color: #535353;
+}
+.benef__list {
+  padding: 0 76px;
+}
+.benef__item {
+  position: relative;
+  width: 370px;
+  margin-bottom: 31px;
+  font-family: 'MuseoSansCyrl-700', sans-serif;
+  font-size: 30px;
+}
+.benef__item::before {
+  content: "";
+  position: absolute;
+  width: 199px;
+  height: 52px;
+  display: block;
+  top: -80px;
+  left: 302px;
+  background-image: url(../img/arrow.svg);
+}
+.benef__item:nth-of-type(even)::before {
+  -webkit-transform: scale(-1, 1);
+      -ms-transform: scale(-1, 1);
+          transform: scale(-1, 1);
+  left: -172px;
+}
+.benef__item::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 300px;
+  height: 300px;
+  background-repeat: no-repeat;
+}
+.benef__item:nth-of-type(odd)::after {
+  left: 480px;
+  top: -30px;
+}
+.benef__item:nth-of-type(even)::after {
+  left: -415px;
+  top: -25px;
+}
+.benef__item:nth-of-type(1)::after {
+  background-image: url("../img/benef1.png");
+}
+.benef__item:nth-of-type(2)::after {
+  background-image: url("../img/benef2.png");
+}
+.benef__item:nth-of-type(3)::after {
+  background-image: url("../img/benef3.png");
+}
+.benef__item-descr {
+  width: 400px;
+  margin-bottom: 223px;
+  font-family: 'MuseoSansCyrl-300', sans-serif;
+  font-size: 18px;
+  color: #535353;
+  line-height: 1.2em;
+}
+.benef__item-descr:last-of-type {
+  margin-bottom: 0;
+}
+.benef__item:nth-of-type(even),
+.benef__item-descr:nth-of-type(even) {
+  margin-left: auto;
+  text-align: right;
+}

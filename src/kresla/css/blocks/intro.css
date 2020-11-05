@@ -1,0 +1,29 @@
+/*! ----INTRO----- */
+.intro {
+  padding-top: 73px;
+  padding-bottom: 59px;
+  background-color: #ebf2f7;
+  background-image: url("../img/introbg.png");
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+.intro__title {
+  width: 610px;
+  margin: 0;
+  margin-left: 330px;
+  font-family: 'MuseoSansCyrl-700', sans-serif;
+  font-size: 41px;
+  color: #535353;
+  text-align: right;
+}
+.intro__descr {
+  width: 610px;
+  margin-left: auto;
+  margin-top: 16px;
+  margin-bottom: 2px;
+  font-size: 27px;
+  text-align: right;
+}
+.intro__call {
+  margin: 64px 0 60px 640px;
+}

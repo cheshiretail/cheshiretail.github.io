@@ -1,0 +1,29 @@
+/*! -----FOOTER----- */
+.footer {
+  padding-top: 13px;
+  padding-bottom: 20px;
+  font-size: 14px;
+  font-family: "MuseoSansCyrl-300", sans-serif;
+}
+.footer__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer__politic {
+  text-decoration: underline;
+  text-align: center;
+}
+.footer__requisites {
+  color: #505050;
+  text-align: right;
+}

@@ -1,0 +1,103 @@
+.footer {
+  position: relative;
+  overflow: hidden;
+  padding-top: 50rem;
+}
+.footer::before {
+  position: relative;
+  z-index: 2;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 164rem;
+  background-image: url("../img/landscape.svg");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+@keyframes moon {
+  from {transform: rotate(0deg)}
+  to {transform: rotate(90deg)}
+}
+.footer::after {
+  z-index: 1;
+  position: absolute;
+  top: 107rem;
+  left: 0;
+  display: block;
+  content: "";
+  width: 400rem;
+  height: 400rem;
+  background-image: url("../img/moon.svg");
+  background-size: 50rem 50rem;
+  background-repeat: no-repeat;
+  animation: moon 20s linear infinite;
+}
+.footer__list {
+  position: relative;
+  z-index: 2;
+  position: relative;
+  padding: 0;
+  padding-bottom: 30rem;
+  margin: 0;
+  margin-top: -2rem;
+  background-color: #151227;
+}
+.footer__item {
+  text-align: center;
+  list-style-type: none;
+}
+.footer__link {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 5rem;
+  font-variant: small-caps;
+}
+
+@media (min-width: 768px) {
+  .footer::before {
+    height: 283rem;
+  }
+  .footer::after {
+    top: 150rem;
+    width: 690rem;
+    height: 690rem;
+    background-size: 65rem 65rem;
+  }
+  .footer__list {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 15rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer {
+    padding-top: 140rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .footer:before {
+    height: 797rem;
+    background-position: center 153rem;
+  }
+  .footer:after {
+    top: unset;
+    bottom: -1450rem;
+    width: 1903rem;
+    height: 1903rem;
+    background-size: 110rem 110rem;
+  }
+  .footer__list {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 15rem;
+    background-color: #2B2647;
+  }
+  .footer__link {
+    font-size: 40rem;
+  }
+}

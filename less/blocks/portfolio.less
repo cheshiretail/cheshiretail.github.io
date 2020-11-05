@@ -1,0 +1,134 @@
+
+.portfolio {
+  z-index: 4;
+  padding: 50rem 0;
+}
+
+.portfolio__title {
+  margin-bottom: 80rem;
+}
+
+.portfolio__list {
+  margin: 0;
+  padding: 0;
+}
+
+.portfolio__item {
+  list-style-type: none;
+  width: 100%;
+  height: 343rem;
+}
+
+.portfolio__item:not(:last-of-type) {
+  margin-bottom: 35rem;
+}
+
+.portfolio__link {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.portfolio__link::before,
+.portfolio__item-dark .portfolio__link::after {
+  z-index: 1;
+  position: absolute;
+  display: block;
+  width: 95%;
+  height: 95%;
+  bottom: 0;
+  right: 0;
+  content: "";
+  background-image: linear-gradient(to right top, #916597, #ff4d6a);
+  transition: all 1s ease;
+}
+
+.portfolio__item-dark .portfolio__link::after {
+  top: 0;
+  left: 0;
+  width: calc(95% + 2rem);
+  height: calc(95% + 2rem);
+  background-image: linear-gradient(to right top, #916597, #ff4d6a);
+}
+.portfolio__img {
+  z-index: 2;
+  position: absolute;
+  display: block;
+  top: 1rem;
+  left: 1rem;
+  width: 95%;
+  height: 95%;
+}
+
+.portfolio__descr {
+  z-index: 3;
+  position: absolute;
+  left: 1rem;
+  top: 70%;
+  width: 80%;
+  height: 20%;
+  margin: 0;
+  padding: 10rem 0;
+  color: white;
+  text-align: center;
+  font-family: 'Nautilus', sans-serif;
+  background-image: url('../../img/pages/descr.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: translateX(0);
+  transition: all 1s ease;
+}
+
+.portfolio__link:hover .portfolio__descr {
+}
+
+@media (min-width: 768px) {
+  .portfolio__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40rem;
+  }
+  .portfolio__item {
+    height: 285rem;
+  }
+  .portfolio__item:not(:last-of-type) {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .portfolio {
+    min-height: 100vh;
+  }
+  .portfolio__list {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 60rem;
+  }
+  .portfolio__item {
+    height: 411rem;
+  }
+  .portfolio__title {
+    margin-bottom: 90rem;
+  }
+  .portfolio__descr {
+    padding: 14rem 0;
+    font-size: 28rem;
+  }
+  .portfolio__img {
+    z-index: 4;
+    filter: grayscale(1);
+    transition: filter 1s ease;
+  }
+  .portfolio__descr {
+    z-index: 5;
+  }
+  .portfolio__item:hover .portfolio__img {
+    filter: grayscale(0);
+  }
+  .portfolio__item:hover .portfolio__link::before {
+    transform: translate(10rem, 10rem);
+  }
+}

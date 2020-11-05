@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>Тренировочный макет excr</title>
+		<meta name="discription" content="Тренировочный макет excr">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.min.css">
+	</head>
+
+	<body>
+
+		<header class="header">
+			<div class="header__wrapper wrapper">
+				<div class="header__logo logo">
+					<span class="logo__bold">MONEYEX</span>CHANGE
+				</div>
+				<nav class="header__nav main-nav">
+					<ul class="main-nav__list">
+						<li class="main-nav__item"><a class="main-nav__link" href="#">Компания</a></li>
+						<li class="main-nav__item"><a class="main-nav__link" href="#">Блог</a></li>
+						<li class="main-nav__item"><a class="main-nav__link" href="#">Контакты</a></li>
+					</ul>
+				</nav>
+				<div class="header__login">
+					<button class="header__in main-nav__link" type="button" name="button">Вход</button>
+					<button class="header__register" type="button" name="button">Регистрация</button>
+				</div>
+			</div>
+		</header>
+
+		<section class="intro">
+			<div class="wrapper">
+				<h1 class="intro__title">Мультивалютный<br>обменный сервис 24/7</h1>
+				<p class="intro__title-descr">Быстрый обмен без скрытых комиссий</p>
+				<div class="intro__currency">
+					<div class="intro__exc">
+						<h3 class="intro__exc-title">Вы отдаете</h3>
+						<p class="intro__exc-text">Сумма</p>
+						<div class="intro__flex">
+							<input class="intro__amount" type="text" name="give" value="1000.00">
+							<form class="intro__lists" action="index.html" method="post">
+								<select class="intro__list1" name="list1">
+									<option value=""><img src="img/sberbank.svg" alt="sberbank logo">RUB</option>
+								</select>
+							</form>
+						</div>
+					</div>
+					<button class="intro__arrows" type="button" name="arrows"></button>
+					<div class="intro__exc">
+						<h3 class="intro__exc-title">Вы получаете <span class="intro__exc-min">c учетом комиссии ПС (0.5%)</span></h3>
+						<p class="intro__exc-text">Сумма</p>
+						<div class="intro__flex">
+							<input class="intro__amount" type="text" name="give" value="1000.00">
+							<form class="intro__lists" action="index.html" method="post">
+								<select class="intro__list1" name="list1">
+									<option value=""><img src="" alt="" width="30">RUB</option>
+								</select>
+							</form>
+						</div>
+					</div>
+					<button class="intro__btn" type="button" name="go-exc">Обменять
+					</button>
+				</div>
+				<div class="intro__currency-shadow"></div>
+			</div>
+		</section>
+
+		<section class="benefit">
+			<div class="wrapper">
+				<h2 class="visually-hidden">Преимущества сотрудничества с нами</h2>
+				<dl class="benefit__list">
+					<div class="benefit__secure">
+						<dt class="benefit__item">Безопасность</dt>
+						<dd class="benefit__descr">Усиленная безопасность ваших обменов, усиленная безопасность от мошенников!</dd>
+					</div>
+					<div class="benefit__system">
+						<dt class="benefit__item">Реферальная система</dt>
+						<dd class="benefit__descr">На сервисе работает партнерская программа , за каждый обмен приведенного вами клиента, вы получаете 0.5% с нашей прибыли.</dd>
+					</div>
+					<div class="benefit__support">
+						<dt class="benefit__item">Онлайн поддержка</dt>
+						<dd class="benefit__descr">Четыре вида поддержки для наших клиентов:  Телеграмм канал, E-mail поддержка, и мобильный номер (Viber).</dd>
+					</div>
+				</dl>
+			</div>
+		</section>
+
+		<section class="reputation">
+			<div class="wrapper reputation__wrapper">
+				<div class="reputation__block">
+					<h2 class="reputation__title">Сервис обмена электронных<br> валют с 5-летней историей</h2>
+					<p class="reputation__descr">За время работы мы приобрели репутацию проверенного партнера и делаем все возможное, чтобы ваши впечатления от нашего сервиса были только благоприятными.</p>
+					<div class="reputation__img"></div>
+				</div>
+			</div>
+		</section>
+
+		<section class="reserve">
+			<div class="wrapper">
+				<h2 class="reserve__title">Резерв валюты</h2>
+				<ul class="reserve__list">
+					<li class="reserve__item">
+						<img src="img/yandex.svg" alt="yandex" width="52.5">
+						<div class="reserve__item-inner">
+							<h3 class="reserve__item-title">Yandex RUB</h3>
+							<p class="reserve__item-descr">900549</p>
+						</div>
+					</li>
+					<li class="reserve__item">
+						<img src="img/etherium.svg" alt="etherium" width="52.5">
+						<div class="reserve__item-inner">
+							<h3 class="reserve__item-title">Ethereum ETH</h3>
+							<p class="reserve__item-descr">123</p>
+						</div>
+					</li>
+					<li class="reserve__item">
+						<img src="img/bitcoin.svg" alt="bitcoin" width="52.5">
+						<div class="reserve__item-inner">
+							<h3 class="reserve__item-title">Bitcoin BTC</h3>
+							<p class="reserve__item-descr">0.63333439</p>
+						</div>
+					</li>
+					<li class="reserve__item">
+						<img src="img/sberbank.svg" alt="sberbank" width="52.5">
+						<div class="reserve__item-inner">
+							<h3 class="reserve__item-title">Сбербанк  RUB</h3>
+							<p class="reserve__item-descr">142666</p>
+						</div>
+					</li>
+					<li class="reserve__item">
+						<img src="img/privat.svg" alt="privat24" width="52.5">
+						<div class="reserve__item-inner">
+							<h3 class="reserve__item-title">Приват 24 UAH</h3>
+							<p class="reserve__item-descr">142666</p>
+						</div>
+					</li>
+					<li class="reserve__item">
+						<img src="img/paypal.svg" alt="paypal" width="52.5">
+						<div class="reserve__item-inner">
+							<h3 class="reserve__item-title">PayPal USD</h3>
+							<p class="reserve__item-descr">5139.58</p>
+						</div>
+					</li>
+					<li class="reserve__item">
+						<img src="img/pm.svg" alt="PM" width="52.5">
+						<div class="reserve__item-inner">
+							<h3 class="reserve__item-title">PM USD</h3>
+							<p class="reserve__item-descr">3192.22</p>
+						</div>
+					</li>
+					<li class="reserve__item">
+						<img src="img/qiwi.svg" alt="qiwi" width="52.5">
+						<div class="reserve__item-inner">
+							<h3 class="reserve__item-title">Qiwi RUB</h3>
+							<p class="reserve__item-descr">99243.321</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="reviews">
+			<div class="wrapper">
+				<h2 class="reviews__title">Что клиенты говорят о нас</h2>
+				<div class="reviews__block">
+					<div class="reviews__post">
+						<p class="reviews__text">Киви переправил деньги не на кошелек а на номер мтс будьте внимательны.даже в этом случаи делают возврат и переводят на приват.особая благодарность оператору Марии.</p>
+						<span class="reviews__autor">Jacob Robertson</span>
+						<time class="reviews__time">20.02.2020, 12:10</time>
+					</div>
+					<div class="reviews__post">
+						<p class="reviews__text">3-й раз выполняю обмен. все как всегда на отлично! транзакции выполняются в течение 15-20 мин. что очень быстро + лучший ценник!</p>
+						<span class="reviews__autor">Morris Robertson</span>
+						<time class="reviews__time">17.02.2020, 18:51</time>
+					</div>
+				</div>
+				<div class="reviews__buttons">
+					<button class="reviews__arrow-left" type="button" name="arrow-left"><span class="visually-hidden">Назад</span></button>
+					<button class="reviews__arrow-right" type="button" name="arrow-right"><span class="visually-hidden">Вперед</span></button>
+				</div>
+			</div>
+		</section>
+
+		<section class="service">
+			<div class="wrapper">
+				<div class="service__block">
+					<h2 class="service__title">Будем рады предоставить Вам качественный обмен валют на нашем сервисе!</h2>
+					<p class="service__descr">Начните обмен прямо сейчас</p>
+					<button class="service__button" type="button" name="service__start">Начать обмен</button>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<div class="wrapper footer__wrapper">
+				<div class="footer__logo logo logo--footer">
+					<span class="logo__bold">MONEYEX</span>CHANGE
+				</div>
+				<nav class="footer__nav main-nav">
+					<ul class="main-nav__list">
+						<li class="main-nav__item"><a class="main-nav__link" href="#">Компания</a></li>
+						<li class="main-nav__item"><a class="main-nav__link" href="#">Блог</a></li>
+						<li class="main-nav__item"><a class="main-nav__link" href="#">Контакты</a></li>
+						<li class="main-nav__item"><a class="main-nav__link" href="#">Обмен</a></li>
+					</ul>
+				</nav>
+				<div class="footer__social social">
+					<ul class="social__list">
+						<li class="social__item">
+							<a class="social__link" href="#">
+								<img src="img/vk.svg" alt="VK">
+								<span class="visually-hidden">Вконтакте</span>
+							</a>
+						</li>
+						<li class="social__item">
+							<a class="social__link" href="#">
+								<img src="img/facebook.svg" alt="Facebook">
+								<span class="visually-hidden">Facebook</span>
+							</a>
+						</li>
+						<li class="social__item">
+							<a class="social__link" href="#">
+								<img src="img/instagram.svg" alt="Instagram">
+								<span class="visually-hidden">Instagram</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+
+	</body>
+</html>

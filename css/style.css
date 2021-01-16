@@ -1728,9 +1728,7 @@ section.active {
             filter: grayscale(0);
   }
   .portfolio__item:hover .portfolio__link::before {
-    -webkit-transform: translate(10rem, 10rem);
-        -ms-transform: translate(10rem, 10rem);
-            transform: translate(10rem, 10rem);
+            transform: translate(45%, 45%);
   }
 }
 /*! -----FOOTER----- */

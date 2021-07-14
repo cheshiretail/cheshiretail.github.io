@@ -1520,14 +1520,14 @@ a {
     margin-top: 21rem;
   }
   .about__item-title {
-    font-size: 33rem;
+    font-size: 28rem;
   }
   .about__item-title::after {
     top: 123%;
     width: 102%;
   }
   .about__item-descr {
-    font-size: 20rem;
+    font-size: 18rem;
   }
   .section__title {
     font-size: 65rem;

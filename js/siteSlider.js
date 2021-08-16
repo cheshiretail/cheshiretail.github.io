@@ -189,7 +189,7 @@ function swipeSlider(data) {
     }
   })
 
-  if(data.touchOn) {   //прокрутка прикосновением
+  if(data.swipeEnable) {   //прокрутка прикосновением
     $sliderItems[0].parentNode.addEventListener('touchstart', function(event) {
       xTouch = parseInt(event.touches[0].clientX);
       yTouch = parseInt(event.touches[0].clientY);
@@ -225,7 +225,7 @@ if (mediaQueryMob.matches) {
     buttonLeftId: 'about__btnLeft',
     buttonRightId: 'about__btnRight',
     visibleElements: 3,
-    touchOn: true,
+    swipeEnable: true,
     indicatorId: 'about__indicator',
     timeInterval: 500
   })
@@ -235,7 +235,7 @@ if (mediaQueryMob.matches) {
     buttonLeftId: 'portfolio__btnLeft',
     buttonRightId: 'portfolio__btnRight',
     visibleElements: 1,
-    touchOn: true,
+    swipeEnable: true,
     indicatorId: 'portfolio__indicator',
     timeInterval: 500
   })
@@ -249,7 +249,7 @@ if (mediaQuery768.matches && !mediaQuery1200.matches) {
     buttonLeftId: 'about__btnLeft',
     buttonRightId: 'about__btnRight',
     visibleElements: 4,
-    touchOn: true,
+    swipeEnable: true,
     indicatorId: 'about__indicator',
     timeInterval: 500
   })
@@ -259,7 +259,7 @@ if (mediaQuery768.matches && !mediaQuery1200.matches) {
     buttonLeftId: 'portfolio__btnLeft',
     buttonRightId: 'portfolio__btnRight',
     visibleElements: 2,
-    touchOn: true,
+    swipeEnable: true,
     indicatorId: 'portfolio__indicator',
     timeInterval: 500
   })
@@ -273,7 +273,7 @@ if (mediaQuery1200.matches) {
     buttonLeftId: 'about__btnLeft',
     buttonRightId: 'about__btnRight',
     visibleElements: 6,
-    touchOn: true,
+    swipeEnable: true,
     indicatorId: 'about__indicator',
     timeInterval: 500
   })
@@ -283,9 +283,13 @@ if (mediaQuery1200.matches) {
     buttonLeftId: 'portfolio__btnLeft',
     buttonRightId: 'portfolio__btnRight',
     visibleElements: 4,
-    touchOn: true,
+    swipeEnable: true,
     indicatorId: 'portfolio__indicator',
     timeInterval: 500
   })
 
 }
+
+window.addEventListener('orientationchange', function() {
+  location.reload()
+})

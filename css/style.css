@@ -592,8 +592,12 @@ a {
     height: 40rem;
     transition: color 1s ease;  
   }
-  .nav__button:hover {
-    background-color: rgb(32, 133, 111);
+  .nav__item:hover {
+    filter: drop-shadow(5rem 5rem 2rem mediumseagreen);
+  }  
+  .nav__item.active:hover {
+    filter: none;
+    cursor: default;
   }  
 }
 /*! -----INTRO----- */
@@ -1938,6 +1942,7 @@ a {
   height: 50rem;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 25.2 49.2' overflow='visible' xml:space='preserve'%3E%3Cline fill='none' stroke='%23FFFFFF' stroke-miterlimit='10' x1='24.9' y1='24.9' x2='0.4' y2='0.4'/%3E%3Cline fill='none' stroke='%23FFFFFF' stroke-miterlimit='10' x1='24.9' y1='24.4' x2='0.4' y2='48.9'/%3E%3Cline fill='none' stroke='%23FFFFFF' stroke-miterlimit='10' x1='4.9' y1='36.9' x2='17.4' y2='24.4'/%3E%3Cline fill='none' stroke='%23FFFFFF' stroke-miterlimit='10' x1='16.9' y1='24.9' x2='4.4' y2='12.4'/%3E%3C/svg%3E%0A");
   background-size: contain;
+  background-repeat: no-repeat;
   background-position: center;
   background-color: transparent;
   border: none;

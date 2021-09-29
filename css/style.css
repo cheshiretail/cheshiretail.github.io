@@ -497,8 +497,9 @@ a {
     display: none;
   }
   section.active {
+    position: relative;
     display: flex;
-    animation: fade-section 1s;
+    animation: fade-section 1s ease both;
   }
 
   /*! -----NAV----- */
@@ -1756,15 +1757,13 @@ a {
 }
 /*! -----FOOTER----- */
 .footer {
+  z-index: 4;
   position: relative;
   display: none;
   overflow: hidden;
   padding-top: 50rem;
   height: 100vh;
   background-image: linear-gradient(to bottom, #00221D, transparent 20%);
-}
-.footer.active {
-  display: flex;
 }
 .footer::before {
   position: absolute;

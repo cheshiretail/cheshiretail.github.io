@@ -402,17 +402,33 @@ html {
   }
 }
 body {
+  position: relative;
   font-family: 'Fira Code', sans-serif;
   font-size: 22rem;
   font-weight: 300;
   background-color: #182736;
-  background-image: url(../img/bck.jpg);
-  background-attachment: fixed;
-  background-size: cover;
   width: 100%;
   max-width: 100%;
   overflow: hidden;
+  perspective: 1500rem;
 }
+
+.background-overlay {
+  z-index: 1;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url(../img/bck.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 110%;
+  width: 110%;
+  transform-style: preserve-3d;
+  perspective-origin: center center;
+}
+
 @media (min-width: 1200px) {
   body {
     overflow-x: hidden;
@@ -1272,6 +1288,7 @@ a {
   height: 100vh;
 }
 .section__title {
+  z-index: 2;
   position: relative;
   margin: 0;
   color: #f5b14c;
@@ -1582,6 +1599,8 @@ a {
   margin-bottom: 0;
 }
 .portfolio__list {
+  position: relative;
+  z-index: 2;
   margin: 0;
   padding: 0;
   perspective: 900px;

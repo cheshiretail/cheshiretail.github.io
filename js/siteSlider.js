@@ -293,3 +293,36 @@ if (mediaQuery1200.matches) {
 window.addEventListener('orientationchange', function() {
   location.reload()
 })
+
+// 3d слой-бэкграунд
+
+const layerOf3dBackground = document.getElementById('js--background-overlay');
+
+  //--ширина высота области просмотра
+const windowInnerWidth = window.innerWidth;
+const windowInnerHeight = window.innerHeight;
+
+  //--одна часть отрезка ширины длины соответствующая одному градусу наклона
+const onePartOfWindowInnerWidth = windowInnerWidth / 12;
+const onePartOfWindowInnerHeight = windowInnerHeight / 6;
+
+  //--получение средней точки экрана
+const startPositionOfXCounter = windowInnerWidth / 2
+const startPositionOfYCounter = windowInnerHeight / 2
+
+let xCoordOfMouse, yCoordOfMouse, resultXCoord, resultYCoord
+
+window.addEventListener('mousemove', function(event) {
+  xCoordOfMouse = event.clientX;
+  yCoordOfMouse = event.clientY;
+
+  resultXCoord = -((startPositionOfXCounter - xCoordOfMouse) / onePartOfWindowInnerWidth);
+  resultYCoord = ((startPositionOfYCounter - yCoordOfMouse) / onePartOfWindowInnerHeight);
+
+  layerOf3dBackground.style.transform = `translate(-50%, -50%) rotateX(${resultYCoord}deg) rotateY(${resultXCoord}deg)`
+
+
+  console.log(resultXCoord, 'x', resultYCoord, 'y')
+
+
+})

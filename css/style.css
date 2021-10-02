@@ -1764,6 +1764,7 @@ a {
   padding-top: 50rem;
   height: 100vh;
   background-image: linear-gradient(to bottom, #00221D, transparent 20%);
+  animation: none;
 }
 .footer::before {
   position: absolute;

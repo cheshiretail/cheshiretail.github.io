@@ -320,9 +320,4 @@ window.addEventListener('mousemove', function(event) {
   resultYCoord = ((startPositionOfYCounter - yCoordOfMouse) / onePartOfWindowInnerHeight);
 
   layerOf3dBackground.style.transform = `translate(-50%, -50%) rotateX(${resultYCoord}deg) rotateY(${resultXCoord}deg)`
-
-
-  console.log(resultXCoord, 'x', resultYCoord, 'y')
-
-
 })

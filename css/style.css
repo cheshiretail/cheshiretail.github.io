@@ -410,7 +410,7 @@ body {
   width: 100%;
   max-width: 100%;
   overflow: hidden;
-  perspective: 1500rem;
+  perspective: 500rem;
 }
 
 .background-overlay {
@@ -423,8 +423,8 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 110%;
-  width: 110%;
+  height: 150%;
+  width: 150%;
   transform-style: preserve-3d;
   perspective-origin: center center;
 }
